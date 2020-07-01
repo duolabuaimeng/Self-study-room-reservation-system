@@ -1,0 +1,61 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/LW_1.jpg</file>
+        <file>res/LW_2.png</file>
+        <file>res/LW_3.jpg</file>
+        <file>res/LW_4.png</file>
+        <file>res/LW_5.png</file>
+        <file>res/LW_6.png</file>
+        <file>res/LW_7.png</file>
+        <file>res/LW_8.png</file>
+        <file>res/LW_9.png</file>
+        <file>res/LW_10.png</file>
+        <file>res/LW_11.jpg</file>
+        <file>res/LW_12.jpg</file>
+        <file>res/LW_13.jpg</file>
+        <file>res/LW (1).jpg</file>
+        <file>res/LW (2).jpg</file>
+        <file>res/LW (3).jpg</file>
+        <file>res/LW (4).jpg</file>
+        <file>res/LW (5).jpg</file>
+        <file>res/LW (6).jpg</file>
+        <file>res/LW (7).jpg</file>
+        <file>res/lw (1).png</file>
+        <file>res/lw (2).png</file>
+        <file>res/lw (3).png</file>
+        <file>res/lw (4).png</file>
+        <file>res/0001.png</file>
+        <file>res/0002.png</file>
+        <file>res/0003.png</file>
+        <file>res/0004.png</file>
+        <file>res/0005.png</file>
+        <file>res/0006.png</file>
+        <file>res/0007 (1).png</file>
+        <file>res/0007 (2).png</file>
+        <file>res/0007 (3).png</file>
+        <file>res/0007 (4).png</file>
+        <file>res/0007 (5).png</file>
+        <file>res/0007 (6).png</file>
+        <file>res/0000_3.jpg</file>
+        <file>res/1.png</file>
+        <file>res/222.jpg</file>
+        <file>res/cat.jpg</file>
+        <file>res/girl.jpg</file>
+        <file>res/backup.jpg</file>
+        <file>res/xiugai.png</file>
+        <file>res/r.png</file>
+        <file>res/b.png</file>
+        <file>res/back.png</file>
+        <file>res/concel.png</file>
+        <file>res/delete.png</file>
+        <file>res/imfire.png</file>
+        <file>res/modify.png</file>
+        <file>res/add.png</file>
+        <file>res/final (1).jpg</file>
+        <file>res/final (2).jpg</file>
+        <file>res/final (4).jpg</file>
+        <file>res/final (5).jpg</file>
+        <file>res/final (6).jpg</file>
+        <file>res/final (3).jpg</file>
+    </qresource>
+</RCC>

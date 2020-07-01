@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Fines</class>
+ <widget class="QMainWindow" name="Fines">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1627</width>
+    <height>991</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/res/0000_3.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="deleteBtn">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>540</y>
+      <width>161</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#96CA2D;
+border-radius:60px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+background:#168039;
+border-radius:60px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>结清</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>331</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color:	#000001;
+border:none;
+font-size:80px;
+font-family:Microsoft JhengHei;
+background:transparent;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>罚金信息</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="school_id_Edit">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>330</y>
+      <width>381</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background:rgba(255,225,26,0.5);
+border-radius:15px;
+color:#000000;
+font-size:40px;
+font-family:Microsoft JhengHei;
+border:2px solid #002D40;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>输入借阅人用户名</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>790</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#ff8c69;
+border-radius:60px;
+font-size:25px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+border-radius:60px;
+background:#FF6F69;
+font-size:25px;
+font-family:Microsoft JhengHei;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addBtn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>550</y>
+      <width>181</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#ff8c69;
+border-radius:60px;
+font-size:25px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+border-radius:60px;
+background:#FF6F69;
+font-size:25px;
+font-family:Microsoft JhengHei;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>增加</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

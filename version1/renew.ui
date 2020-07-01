@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Renew</class>
+ <widget class="QMainWindow" name="Renew">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1376</width>
+    <height>895</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>续座</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/res/0003.png</normaloff>:/res/0003.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+background:url(:/res/0000_3.jpg);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>1221</width>
+      <height>811</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background:rgba(253,116,0,0.5);
+border:2px solid #002D40;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>280</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:#FFE11A;
+border-radius:15px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+background:#FD7400;
+border-radius:15px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>280</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:#FFE11A;
+border-radius:15px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+background:#FD7400;
+border-radius:15px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>显示全部</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>50</y>
+       <width>161</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:	#000001;
+border:none;
+font-size:80px;
+font-family:Microsoft JhengHei;
+background:transparent;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>续座</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>180</y>
+       <width>811</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">*{
+	background:rgba(255,225,26,0.5);
+	font-size:20px;
+	color:black;
+	font-family:Microsoft JhengHei;
+}
+QHeaderView::section{
+	background:rgba(255,225,26,0.5);
+	font-size:20px;
+	color:black;
+	font-family:Microsoft JhengHei;
+}
+QHeaderView{
+	min-height:30px;
+	background:rgba(255,225,26,0.5);
+	font-size:20px;
+	color:black;
+	font-family:Microsoft JhengHei;
+}
+</string>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>45</number>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>45</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>45</number>
+     </attribute>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>580</y>
+       <width>121</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:#ff8c69;
+border-radius:60px;
+font-size:25px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+border-radius:60px;
+background:#FF6F69;
+font-size:25px;
+font-family:Microsoft JhengHei;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>返回</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>480</y>
+       <width>291</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background:rgba(255,225,26,0.5);
+border-radius:15px;
+color:#000000;
+font-size:40px;
+font-family:Microsoft JhengHei;
+border:2px solid #002D40;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>输入续订教室号</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>180</y>
+       <width>281</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background:rgba(255,225,26,0.5);
+border-radius:15px;
+color:#000000;
+font-size:40px;
+font-family:Microsoft JhengHei;
+border:2px solid #002D40;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>输入教室名查询</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>580</y>
+       <width>121</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:#96CA2D;
+border-radius:60px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+background:#168039;
+border-radius:60px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>续订</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

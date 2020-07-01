@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Backup</class>
+ <widget class="QMainWindow" name="Backup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1916</width>
+    <height>980</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:url(:/res/backup.jpg)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>80</y>
+      <width>541</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	font: 18pt &quot;Comic Sans MS&quot;;
+background:rgba(255,150,150,0.5);
+border-radius:25px;
+}
+
+
+
+QLineEdit::hover
+{
+
+  color:green
+  border-color:rgb(50,480,40);
+  background-color:green;
+}
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>   搜索</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>80</y>
+      <width>81</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background:rgba(255,255,157,0.70);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/xiugai.png</normaloff>:/res/xiugai.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>250</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 备 份 所 有 数 据</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/b.png</normaloff>:/res/b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>250</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 还 原 所 有 数 据</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/r.png</normaloff>:/res/r.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>400</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 备 份 图 书 信 息</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/b.png</normaloff>:/res/b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>400</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 还 原 图 书 信 息</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/r.png</normaloff>:/res/r.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>550</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 备 份 账 户 信 息</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/b.png</normaloff>:/res/b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>550</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 还 原 账 户 信 息</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/r.png</normaloff>:/res/r.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>700</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 备 份 借 阅 记 录</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/b.png</normaloff>:/res/b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>700</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 还 原 借 阅 信 息</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/r.png</normaloff>:/res/r.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>850</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 备 份 校 园 卡 信 息</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/b.png</normaloff>:/res/b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_11">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>850</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string> 还 原 校 园 卡信 息</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/r.png</normaloff>:/res/r.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="geometry">
+     <rect>
+      <x>1790</x>
+      <y>900</y>
+      <width>81</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+
+background:rgba(1,222,255,0.25);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,255,157,0.70);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/LW_8.png</normaloff>:/res/LW_8.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>240</y>
+      <width>511</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background:rgba(255,255,157,0.20);
+border-radius:15px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>131</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:rgb(85, 170, 255);
+font-size:37px;
+font-family:Microsoft JhengHei;
+background:transparent;
+}</string>
+     </property>
+     <property name="text">
+      <string> 磁 盘 :</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>30</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+font: 75 20pt &quot;Ink Free&quot;;
+background:rgba(255,150,150,0.25);
+border-radius:25px;
+}
+
+
+
+/* 下拉后，整个下拉窗体越过每项的样式 */
+QComboBox QAbstractItemView::item:hover {
+    font: 75 20pt &quot;Ink Free&quot;;
+background:rgba(255,150,150,0.5);
+border-radius:25px;  /* 整个下拉窗体越过每项的背景色 */
+}
+
+
+QComboBox QAbstractItemView::item:selected {
+    font: 75 20pt &quot;Ink Free&quot;;
+background:rgba(255,150,150,0.5);
+border-radius:25px;
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>C</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>E</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>270</y>
+       <width>91</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background:rgba(0,0,0,0.00);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/res/imfire.png</normaloff>:/res/imfire.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>100</y>
+       <width>171</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:rgb(85, 170, 255);
+font-size:37px;
+font-family:Microsoft JhengHei;
+background:transparent;
+}</string>
+     </property>
+     <property name="text">
+      <string> 文 件 夹 :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>270</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background:rgba(0,0,0,0);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/res/concel.png</normaloff>:/res/concel.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>120</y>
+       <width>271</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit
+{
+	font: 18pt &quot;Comic Sans MS&quot;;
+background:rgba(255,150,150,0.5);
+border-radius:25px;
+}
+
+
+
+QLineEdit::hover
+{
+
+  color:green
+  border-color:rgb(50,480,40);
+  background-color:green;
+}
+</string>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>  foldername</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>120</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background:rgba(0,0,0,0.00);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/res/back.png</normaloff>:/res/back.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>180</y>
+       <width>481</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:white;
+font-size:25px;
+font-family:Microsoft JhengHei;
+background:transparent;
+}</string>
+     </property>
+     <property name="text">
+      <string>若路径中需要包括文件夹                  ↑</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>220</y>
+       <width>481</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:white;
+font-size:25px;
+font-family:Microsoft JhengHei;
+background:transparent;
+}</string>
+     </property>
+     <property name="text">
+      <string>请在输入文件夹名后点击上面按钮</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

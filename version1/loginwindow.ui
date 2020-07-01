@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QMainWindow" name="LoginWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1003</width>
+    <height>858</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>欢迎</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>res/login.png</normaloff>res/login.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+background:url(:/res/LW_3.jpg);
+}
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>130</y>
+      <width>611</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background:rgba(0,0,0,0.65);
+border-radius:15px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>40</y>
+       <width>351</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:white;
+font-size:50px;
+font-family:Comic Sans MS;
+background:transparent;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Welcome Back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>520</y>
+       <width>531</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:#b22c46;
+border-radius:15px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+background:#333;
+border-radius:15px;
+background:#ff8c69;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>登录</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>590</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:#b22c46;
+border-radius:15px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+background:#333;
+border-radius:15px;
+background:#ff8c69;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}</string>
+     </property>
+     <property name="text">
+      <string>注册</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>590</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:#b22c46;
+border-radius:15px;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+background:#333;
+border-radius:15px;
+background:#ff8c69;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}</string>
+     </property>
+     <property name="text">
+      <string>忘记密码</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>270</y>
+       <width>491</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background:transparent;
+border:none;
+color:#717072;
+font-size:32px;
+font-family:Microsoft JhengHei;
+border-bottom:1px solid #717072;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Username</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>390</y>
+       <width>491</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+background:transparent;
+border:none;
+color:#717072;
+font-size:32px;
+font-family:Microsoft JhengHei;
+border-bottom:1px solid #717072;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Password</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>230</y>
+       <width>201</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:white;
+font-size:32px;
+font-family:Microsoft JhengHei;
+background:transparent;
+}</string>
+     </property>
+     <property name="text">
+      <string>Username</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>360</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:white;
+font-size:32px;
+font-family:Microsoft JhengHei;
+background:transparent;
+}</string>
+     </property>
+     <property name="text">
+      <string>Password</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_student">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>140</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton::indicator {
+    width: 40px;
+    height: 40px;
+}
+QRadioButton::indicator::unchecked {
+    image:url(:/res/LW_6.png);
+}
+QRadioButton::indicator::checked {
+    image:url(:/res/LW_5.png);
+}
+
+QRadioButton{
+color:white;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}</string>
+     </property>
+     <property name="text">
+      <string>学生</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_admin">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>140</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton::indicator {
+    width: 40px;
+    height: 40px;
+}
+QRadioButton::indicator::unchecked {
+    image:url(:/res/LW_6.png);
+}
+QRadioButton::indicator::checked {
+    image:url(:/res/LW_5.png);
+}
+
+QRadioButton{
+color:white;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}</string>
+     </property>
+     <property name="text">
+      <string>管理员</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_teacher">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>140</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton::indicator {
+    width: 40px;
+    height: 40px;
+}
+QRadioButton::indicator::unchecked {
+    image:url(:/res/LW_6.png);
+}
+QRadioButton::indicator::checked {
+    image:url(:/res/LW_5.png);
+}
+
+QRadioButton{
+color:white;
+font-size:28px;
+font-family:Microsoft JhengHei;
+}</string>
+     </property>
+     <property name="text">
+      <string>教师</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>70</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+background:#b22c46;
+border-radius:60px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/LW_2.png</normaloff>:/res/LW_2.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>85</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

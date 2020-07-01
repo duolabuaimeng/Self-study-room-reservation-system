@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CountList</class>
+ <widget class="QMainWindow" name="CountList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2000</width>
+    <height>1028</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:url(:/res/backup.jpg)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="favorite_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1580</x>
+      <y>530</y>
+      <width>291</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>最受欢迎的三本图书</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sex_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1580</x>
+      <y>410</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>按性别统计</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1670</x>
+      <y>810</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+
+background:rgba(1,222,255,0.25);
+border-radius:50px;
+}
+QPushButton:hover{
+background:rgba(255,255,157,0.70);
+border-radius:50px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/LW_8.png</normaloff>:/res/LW_8.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>40</y>
+      <width>371</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+color:	#000001;
+border:none;
+font-size:80px;
+color:orange;
+font-family:Microsoft JhengHei;
+background:transparent;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>信息统计</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>1501</width>
+      <height>831</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+*{
+    background:rgba(255,255,157,0.80);
+	font-size:20px;
+	color:black;
+	font-family:Microsoft JhengHei;
+}
+QHeaderView::section{
+    background:rgba(255,255,157,0.90);
+	font-size:20px;
+	color:black;
+	font-family:Microsoft JhengHei;
+}
+QHeaderView{
+	min-height:30px;
+    background:rgba(255,255,157,0.80);
+	font-size:20px;
+	color:black;
+	font-family:Microsoft JhengHei;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="class_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1580</x>
+      <y>290</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>按年级统计</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="department_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1580</x>
+      <y>170</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>按学院统计</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fines_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1580</x>
+      <y>670</y>
+      <width>291</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+
+{
+font: 16pt &quot;Ink Free&quot;;
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(255,50,157,0.4);
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>查看罚金情况</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

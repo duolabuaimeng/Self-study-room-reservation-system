@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BookInformation</class>
+ <widget class="QMainWindow" name="BookInformation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1642</width>
+    <height>1272</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+background:url(:/res/LW (2).jpg);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1570</x>
+      <y>860</y>
+      <width>311</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 25pt &quot;Arial&quot;;
+background:rgba(237, 255, 255,0.70);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>  返  回</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/0007 (6).png</normaloff>:/res/0007 (6).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>30</y>
+      <width>541</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+font-size:40px;
+font-family:Microsoft JhengHei;
+
+background:rgba(255,255,157,0.50);
+border-radius:25px;
+}
+
+
+
+QLineEdit::hover
+{
+
+  color:green
+  border-color:rgb(50,480,40);
+  background-color:green;
+}
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>      请输入您想操作的图书号</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>1810</x>
+      <y>100</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 25pt &quot;Arial&quot;;
+
+background:rgba(255,255,157,0.50);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/delete.png</normaloff>:/res/delete.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1685</x>
+      <y>100</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 25pt &quot;Arial&quot;;
+
+background:rgba(255,255,157,0.50);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/add.png</normaloff>:/res/add.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>1560</x>
+      <y>100</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 25pt &quot;Arial&quot;;
+
+background:rgba(255,255,157,0.50);
+border-radius:26px;
+}
+QPushButton:hover{
+background:rgba(121,0,255,0.20);
+border-radius:26px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/modify.png</normaloff>:/res/modify.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>1501</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+*{
+    background:rgba(255,255,157,0.80);
+	font-size:20px;
+	color:black;
+	font-family:Microsoft JhengHei;
+}
+QHeaderView::section{
+    background:rgba(255,255,157,0.90);
+	font-size:20px;
+	color:black;
+	font-family:Microsoft JhengHei;
+}
+QHeaderView{
+	min-height:30px;
+    background:rgba(255,255,157,0.80);
+	font-size:20px;
+	color:black;
+	font-family:Microsoft JhengHei;
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>40</y>
+      <width>81</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background:rgba(255,255,157,0.70);
+border-radius:26px;
+}
+QPushButton:hover{
+background:#FFE11A;
+border-radius:26px;
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/0003.png</normaloff>:/res/0003.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>40</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background:rgba(255,255,157,0.70);
+border-radius:15px;
+font-size:30px;
+font-family:Microsoft JhengHei;
+}
+QPushButton:hover{
+background:#FFE11A;
+border-radius:15px;
+font-size:30px;
+font-family:Microsoft JhengHei;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>显示全部</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>40</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+font-size:40px;
+font-family:Microsoft JhengHei;
+background:rgba(255,255,157,0.50);
+border-radius:0px;
+}
+
+
+
+/* 下拉后，整个下拉窗体越过每项的样式 */
+QComboBox QAbstractItemView::item:hover {
+color:black;
+font-size:40px;
+font-family:Microsoft JhengHei;
+background:rgba(0,0,0,0);
+border-radius:0px;  /* 整个下拉窗体越过每项的背景色 */
+}
+
+
+QComboBox QAbstractItemView::item:selected {
+font-size:40px;
+font-family:Microsoft JhengHei;
+background:rgba(255,255,157,0.50);
+border-radius:0px;
+}</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>书名</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>作者名</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>类别</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图书号</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>481</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+font-size:40px;
+font-family:Microsoft JhengHei;
+
+background:rgba(255,255,157,0.50);
+border-radius:25px;
+}
+
+
+
+QLineEdit::hover
+{
+
+  color:green
+  border-color:rgb(50,480,40);
+  background-color:green;
+}
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>   搜索</string>
+    </property>
+   </widget>
+   <zorder>lineEdit</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>lineEdit_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>tableView</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder>comboBox</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
